@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingerie Store - Tu Tienda de Ropa Interior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Dulce Lingerie</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="login.html" class="login-btn">Iniciar Sesión</a></li>
+            <li><a href="registro.html" class="register-btn">Registrarse</a></li>
+            <li>
+                <label for="cart-toggle" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Descubre tu Estilo Interior</h1>
+            <p>Colección exclusiva de lencería y ropa interior de alta calidad</p>
+            <a href="#productos" class="cta-button">Ver Colección</a>
+        </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section id="beneficios" class="beneficios">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="beneficios-grid">
+            <div class="beneficio-card">
+                <i class="fas fa-truck"></i>
+                <h3>Envío Gratis</h3>
+                <p>En compras mayores a $50.000</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-undo"></i>
+                <h3>Devoluciones</h3>
+                <p>30 días para cambios y devoluciones</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Calidad Premium</h3>
+                <p>Materiales de primera calidad</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-heart"></i>
+                <h3>Diseño Exclusivo</h3>
+                <p>Colecciones únicas y modernas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="img/conjuntosencaje.jpg" alt="Conjunto de Encaje Milena">
+                <div class="producto-info">
+                    <h3>Conjunto de Encaje Milena</h3>
+                    <p class="categoria">Mujer</p>
+                    <p class="precio">$29.000</p>
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="img/boxerbasico.jpg" alt="Boxer Básico">
+                <div class="producto-info">
+                    <h3>Boxer Básico</h3>
+                    <p class="categoria">Hombre</p>
+                    <p class="precio">$8.000</p>
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="img/seda.jpg" alt="Pijama de Seda">
+                <div class="producto-info">
+                    <h3>Pijama de Seda</h3>
+                    <p class="categoria">Mujer</p>
+                    <p class="precio">$40.000</p>
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="img/aro.jpg" alt="Conjunto encaje con aro">
+                <div class="producto-info">
+                    <h3>Conjunto encaje con aro</h3>
+                    <p class="categoria">Mujer</p>
+                    <p class="precio">$20.000</p>
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div> <div class="producto-card">
+                <img src="img/bombis.jpg" alt="Bombis x3">
+                <div class="producto-info">
+                    <h3>Bombis x3</h3>
+                    <p class="categoria">Mujer</p>
+                    <p class="precio">$12.000</p>
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="img/feed_23-jpg1-475be1e1d51a23ffc415984666799648-1024-1024.jpg" alt="Conjunto Lucre con aro">
+                <div class="producto-info">
+                    <h3>Conjunto Lucre con aro</h3>
+                    <p class="categoria">Mujer</p>
+                    <p class="precio">$25.000</p>
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="img/medias.webp" alt="Medias">
+                <div class="producto-info">
+                    <h3>Medias unisex</h3>
+                    <p class="categoria">Unisex</p>
+                    <p class="precio">$3.000</p>
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="img/slip.jpg" alt="slip">
+                <div class="producto-info">
+                    <h3>Slip Hombre</h3>    
+                    <p class="categoria">Hombre</p> 
+                    <p class="precio">$6000</p> 
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto-card">
+                <img src="img/image-6.webp" alt="pijamahombre">
+                <div class="producto-info">
+                    <h3>Pijama de hombre</h3>    
+                    <p class="categoria">Hombre</p> 
+                    <p class="precio">$40.000</p> 
+                    <button class="comprar-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+54 2346 123456</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@lingeriastore.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Emilio Mitre 960, Chivilcoy</p>
+                </div>
+            </div>
+            <div class="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" required></textarea>
+                </div>
+                <button class="enviar-btn">Enviar Mensaje</button>
+            </div>
+        </div>
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.123456789012!2d-60.0408481!3d-34.9069441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bebac59962169d%3A0x8521d497631764a4!2sEmilio%20Mitre%20960%2C%20B6632%20Chivilcoy%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1645564751968!5m2!1ses-419!2sar"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lingerie Store</h3>
+                <p>Tu tienda de confianza para ropa interior de calidad.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lingerie Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html> 
