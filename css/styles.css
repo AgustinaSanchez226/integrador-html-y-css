@@ -36,8 +36,14 @@ body {
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
+    display: flex !important;
+    flex-direction: row;
+    position: static !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: auto !important;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -69,7 +75,11 @@ body {
 
 /* Menú Hamburguesa */
 .menu-toggle {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
 }
 
 .hamburger {
@@ -484,14 +494,9 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
     .hamburger {
         display: flex;
     }
-
     .nav-links {
         display: none;
         position: absolute;
@@ -505,11 +510,9 @@ body {
         gap: 1rem;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
     .menu-toggle:checked ~ .nav-links {
         display: flex;
     }
-
     .hero h1 {
         font-size: 2rem;
     }
